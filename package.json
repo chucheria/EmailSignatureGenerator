@@ -1,0 +1,25 @@
+{
+  "name": "signature_datmean",
+  "version": "1.0.0",
+  "description": "Email signature generator for DatMean",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "email",
+    "datmean",
+    "generator",
+    "pug"
+  ],
+  "author": "Bea Hernández",
+  "license": "MIT",
+  "dependencies": {
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

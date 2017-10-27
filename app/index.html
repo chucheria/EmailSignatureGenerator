@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Your Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="rail"></div>
+        <a href="https://datmean.com">
+            <img class="logo" src="https://datmean.com/img/logo.png" alt="DatMean Logo">
+        </a>
+        <h1 class="title">Email signature generator</h1>
+        <p class="subtitle">Give us your details and we'll give your brand</p>
+    </header>
+
+    <section class="generator">
+
+        <div class="details">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" title="Name" placeholder="Name of worker" onkeypress="setTimerName(this.value)" autocomplete="off">
+            </div>
+            <div>
+                <label for="title">Work title</label>
+                <input type="text" id="title" title="Title" placeholder="Chief" onkeypress="setTimerTitle(this.value)" autocomplete="off">
+            </div>
+            <div>
+                <label for="email">E-Mail Address</label>
+                <input type="text" id="email" title="Email" placeholder="name.surname@datmean.com" onkeypress="setTimerEmail(this.value)" autocomplete="off">
+            </div>
+            <div>
+                <label for="phone">Phone number</label>
+                <input type="text" id="phone" title="Phone" placeholder="+34 666 666 666" onkeypress="setTimerPhone(this.value)" autocomplete="off">
+            </div>
+        </div>
+
+        <div class="preview">
+            <label> Preview </label>
+            <div class="signature">
+                <table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
+                    <tr>
+                        <td valign="top" style="border-top: 0; border-bottom: 0; border-left: 0; border-right: solid 3px #226999; padding-right: 10px;"><img height="50px" width="241px" src="http://datmean.com/img/logo-sig.png"></td>
+                        <td style="padding-top: 0; padding-bottom: 0; padding-left: 12px; padding-right: 0;">
+                            <table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
+                                <tr>
+                                    <td colspan="2" style="padding-bottom: 5px; color: #226999; font-size: 16px; font-family: Helvetica, sans-serif;"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="color: #666; font-size: 12px; font-family: Helvetica, sans-serif; font-style:italic;"><i></i></td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #666; font-size: 12px; font-family: Helvetica, sans-serif;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #666; font-size: 12px; font-family: Helvetica, sans-serif;">Hilarión Eslava 55, 7º 1</td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" style="vertical-align: top; font-size: 12px; font-family: Helvetica, sans-serif;"><a href="" style="color: #00ACA6; text-decoration: none; font-weight: normal; font-size: 12px;"></a></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <button class="primary">Select and copy signature</button>
+            <p class="subsubtitle">Click the button and paste in your email client </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by DatMean©</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
