@@ -14,8 +14,8 @@ document.getElementsByClassName("primary")[0].onclick = function(e) {
 document.getElementsByTagName('td')[2].innerText = document.getElementById('name').placeholder
 document.getElementsByTagName('td')[3].innerText = document.getElementById('title').placeholder
 document.getElementsByTagName('td')[4].innerText = document.getElementById('phone').placeholder
-document.getElementsByTagName('a')[1].href = document.getElementById('email').placeholder
-document.getElementsByTagName('a')[1].innerText = "mailto:" + document.getElementById('email').placeholder
+document.getElementsByTagName('a')[1].href = "mailto:" + document.getElementById('email').placeholder
+document.getElementsByTagName('a')[1].innerText = document.getElementById('email').placeholder
 
 // Set signature with key press
 var timerHandle = false; // global!
