@@ -7,7 +7,9 @@ $font-size: 1rem;
 $line-height: 1.6rem;
 // Colors
 $blue-datmean: #226999;
+$blue-shadow: #064065;
 $green-datmean: #00ACA6;
+$green-shadow: #006763;
 $dark-grey: #333;
 $grey: #eee;
 $light-grey: #ccc;
@@ -148,4 +150,22 @@ button:hover {
     float: left;
     width: 26rem;
     margin: 1rem 1rem 1rem -1px;
+    box-shadow: 2px 3px 5px 0px $blue-shadow;
+}
+
+
+.brand {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(150%, -25%);
+    button {
+        width: auto;
+        color: white;
+        background-color: $green-datmean;
+        transition: all 0.2s ease-in;
+        box-shadow: 2px 3px 5px 0px $green-shadow;
+    }
 }
