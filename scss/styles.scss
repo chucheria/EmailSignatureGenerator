@@ -144,13 +144,13 @@ button:hover {
     color: white;
     background-color: $blue-datmean;
     transition: all $animation-duration ease-in;
+    box-shadow: 2px 3px 5px 0px $blue-shadow;
 }
 
 .preview {
     float: left;
     width: 26rem;
     margin: 1rem 1rem 1rem -1px;
-    box-shadow: 2px 3px 5px 0px $blue-shadow;
 }
 
 
