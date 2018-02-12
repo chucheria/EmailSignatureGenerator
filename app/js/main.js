@@ -1,3 +1,16 @@
+// Choose brand, DatMean by default
+document.getElementById("datmean").onclick = function(e) {
+    document.getElementById("img-sign").setAttribute("src", "https://raw.githubusercontent.com/chucheria/EmailSignatureGenerator/master/app/images/logo-text.png")
+    document.getElementById("img-sign").setAttribute("height","65px")
+    document.getElementById("img-sign").setAttribute("width","240px")
+}
+
+document.getElementById("aroa").onclick = function(e) {
+    document.getElementById("img-sign").setAttribute("src", "https://raw.githubusercontent.com/chucheria/EmailSignatureGenerator/master/app/images/aroa.png")
+    document.getElementById("img-sign").setAttribute("height","69px")
+    document.getElementById("img-sign").setAttribute("width","190px")
+}
+
 // Copy button
 document.getElementsByClassName("primary")[0].onclick = function(e) {
     var text = document.getElementsByClassName('signature')[0];
