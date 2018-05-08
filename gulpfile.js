@@ -11,17 +11,17 @@ gulp.task('sass', function() {
         }))
 });
 
-gulp.task('watch', ['browserSync', 'sass'], function() {
-    console.log('Building files');
-    gulp.watch('app/scss/**/*.scss', ['sass']);
-    gulp.watch('app/*.html', browserSync.reload);
-    gulp.watch('app/js/**/*.js', browserSync.reload);
-});
-
 gulp.task('browserSync', function() {
     browserSync.init({
         server: {
             baseDir: 'app'
         },
     })
-})
+});
+
+gulp.task('watch', gulp.series('sass', 'browserSync', function() {
+    console.log('Building files');
+    gulp.watch('app/scss/**/*.scss', ['sass']);
+    gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('app/js/**/*.js', browserSync.reload);
+}));
